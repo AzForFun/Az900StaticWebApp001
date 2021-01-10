@@ -15,11 +15,13 @@ const port = 3000; // process.env.PORT || 3000;
 app.use(morgan('dev'));
 
 // Set the front-end folder to serve public assets.
-app.use(express.static('JavaScriptSPA'))
+app.use(express.static('MS600-MSId001'))
 
 // Set up a route for index.html.
 app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    // res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + (req.path==="/"?'/index.html':req.path)));
+    console.log('req: '+ req.path);
 });
 
 // Start the server.
