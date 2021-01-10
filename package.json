@@ -1,0 +1,19 @@
+{
+  "name": "msal.tutorial",
+  "version": "1.0.0",
+  "description": "MSAL tutorial",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MSAL"
+  ],
+  "author": "",
+  "license": "ISC"
+}
